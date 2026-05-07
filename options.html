@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codeforces List Sort Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 400px;
+    }
+    .setting-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+    }
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #status {
+      margin-top: 10px;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <h2>Extension Settings</h2>
+  
+  <div class="setting-group">
+    <label for="sortBy">Sort By:</label>
+    <select id="sortBy">
+      <option value="solved">Number of users who solved</option>
+      <option value="attempted">Number of users who attempted</option>
+    </select>
+  </div>
+
+  <div class="setting-group">
+    <label for="sortOrder">Sort Order:</label>
+    <select id="sortOrder">
+      <option value="desc">Descending (Highest first)</option>
+      <option value="asc">Ascending (Lowest first)</option>
+    </select>
+  </div>
+
+  <button id="save">Save</button>
+  <div id="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
